@@ -210,6 +210,6 @@ module.exports = function(grunt) {
 
 	// Register Tasks:
 	grunt.registerTask('default', ['connect', 'watch']);
-	grunt.registerTask('build', ['newer:sass', 'clean', 'assemble', 'htmlhint', 'newer:copy', 'jshint', 'newer:uglify', 'newer:concat']);
+	grunt.registerTask('build', ['sass', 'copy', 'htmlhint', 'concat', 'jshint']);
 	// grunt.registerTask('pages', ['build', 'gh-pages']);
 };
