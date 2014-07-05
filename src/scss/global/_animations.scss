@@ -1,0 +1,31 @@
+// @-webkit-keyframes slideOutLeft {
+// 	to 		{ -webkit-transform: translateX(-100%); }
+// }
+@-webkit-keyframes scaleUp {
+	from 	{ opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+
+@include keyframes(slideOutLeft) {
+	to {
+		@include transform(translateX(-100%));
+		// opacity: 0;
+	}
+}
+@include keyframes(slideInLeft) {
+	0% {
+		@include transform(translateX(100%));
+		// opacity: 0;
+	}
+	// 90% {opacity: 0;}
+	100% {
+		@include transform(translateX(0));
+		// opacity: 1;
+	}
+}
+
+@include keyframes(fadeUp) {
+	from {
+		opacity: 0;
+		@include transform(translateY(2em));
+	}
+}
