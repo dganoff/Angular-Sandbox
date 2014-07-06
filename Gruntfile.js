@@ -181,6 +181,7 @@ module.exports = function(grunt) {
 			vendor: {
 				src: [
 					SRC + 'js/angular.js',
+					SRC + 'js/angular-ui-router.js',
 					SRC + 'js/angular-animate.js',
 					SRC + 'js/angular-cookies.js',
 					SRC + 'js/angular-resource.js',
