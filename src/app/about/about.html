@@ -1,13 +1,21 @@
-<h2>The About page</h2>
-{{message}}
-
-<a ui-sref="about.list">Show List</a>
-<div ui-view></div>
-
-<ul class="peopleList">
-	<li ng-repeat="person in people">
-		{{person}}
-	</li>
-</ul>
-
-<button ng-click="addPerson()">Add person</button>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<h2>The About page</h2>
+			{{message}}
+			
+			<ul class="peopleList">
+				<li ng-repeat="person in people">
+					{{person}}
+				</li>
+			</ul>
+			
+			<button ng-click="addPerson()">Add person</button>
+			
+			<br>
+			
+			<a ui-sref="about.list">Show List</a>
+			<div ui-view></div>
+		</div>
+	</div>
+</div>

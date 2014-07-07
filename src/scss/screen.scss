@@ -145,10 +145,17 @@
 ////////////////////////////////
 //////// Project Styles: ///////
 ////////////////////////////////
+
+// Global
 @import "global/vars";
 @import "global/animations";
 @import "global/transitions";
 @import "global/layout";
+
+// Pages
+@import "pages/about";
+
+// Parts
 @import "parts/header";
 @import "parts/footer";
 @import "parts/nav";

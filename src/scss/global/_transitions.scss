@@ -21,5 +21,7 @@
 }
 
 .peopleList .ng-enter {
-	@include animation(fadeUp 0.25s ease-out);
+	@include backface-visibility(visible);
+	@include transform-origin(top left);
+	@include animation(flipIn 0.5s ease-out);
 }

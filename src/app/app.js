@@ -11,6 +11,7 @@ var app = angular.module('sandbox', [
 		$stateProvider
 		.state('main', {
 			url: "/main",
+			controller: "mainCtrl",
 			templateUrl: "views/main.html"
 		})
 		.state('main.list', {
@@ -22,6 +23,7 @@ var app = angular.module('sandbox', [
 		})
 		.state('about', {
 			url: "/about",
+			controller: "aboutCtrl",
 			templateUrl: "views/about.html"
 		})
 		.state('about.list', {

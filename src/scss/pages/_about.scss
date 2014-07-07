@@ -1,0 +1,18 @@
+.aboutPage {
+}
+
+.peopleList {
+	margin: 0;
+	padding: 0;
+
+	li {
+		display: block;
+		list-style: none;
+		padding: 0.25em 0.5em;
+		background: #111;
+
+		&:nth-child(even) {
+			background: #222;
+		}
+	}
+}

@@ -9,6 +9,6 @@ app.controller('aboutCtrl', ['$scope', function($scope) {
 	];
 
 	$scope.addPerson = function() {
-		$scope.people.push("asdf" + Math.floor(Math.random() * 100000));
+		$scope.people.push("Person " + Math.floor(Math.random() * 100));
 	};
 }]);
