@@ -5,7 +5,7 @@ var app = angular.module('sandbox', [
 	// 'ngRoute',
 	'ngAnimate'
 	])
-	.config(function($stateProvider, $urlRouterProvider) {
+	.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 		// For any unmatched url, redirect to /main
 		$urlRouterProvider.otherwise("/main");
 		// Set up the states
@@ -53,4 +53,4 @@ var app = angular.module('sandbox', [
 					$scope.things = ["A", "Set", "Of", "Things"];
 				}
 			});
-});
+}]);
