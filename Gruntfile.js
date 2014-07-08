@@ -19,7 +19,12 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'.tmp/app.min.js': [SRC + 'js/*.js']
+					'dist/js/app.min.js': [
+						SRC + 'app/app.js',
+						SRC + 'app/*/*.service.js',
+						SRC + 'app/*/*.directive.js',
+						SRC + 'app/*/*.ctrl.js'
+					]
 				}
 			}
 		},
@@ -213,5 +218,6 @@ module.exports = function(grunt) {
 	// Register Tasks:
 	grunt.registerTask('default', ['connect', 'watch']);
 	grunt.registerTask('build', ['sass', 'copy', 'htmlhint', 'concat', 'jshint']);
+	grunt.registerTask('build-prod', ['sass', 'copy', 'htmlhint', 'concat:vendor', 'uglify', 'jshint']);
 	// grunt.registerTask('pages', ['build', 'gh-pages']);
 };
