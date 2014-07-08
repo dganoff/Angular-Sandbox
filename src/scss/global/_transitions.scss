@@ -1,6 +1,6 @@
 .page {
 	position: absolute;
-	bottom: 50px;
+	// bottom: 50px;
 	top: 0;
 	width: 100%;
 }
@@ -10,7 +10,7 @@
 }
 
 .ng-leave {
-	z-index: 9999;
+	z-index: 8889;
 }
 
 .page.ng-enter {
@@ -24,4 +24,8 @@
 	@include backface-visibility(visible);
 	@include transform-origin(top left);
 	@include animation(flipIn 0.5s ease-out);
+}
+
+.sub-sections > .tab-content > .active {
+	// @include animation(fadeIn 0.5s ease-out);
 }

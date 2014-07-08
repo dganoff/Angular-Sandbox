@@ -186,7 +186,8 @@ module.exports = function(grunt) {
 					SRC + 'js/angular-cookies.js',
 					SRC + 'js/angular-resource.js',
 					SRC + 'js/angular-route.js',
-					SRC + 'js/angular-touch.js'
+					SRC + 'js/angular-touch.js',
+					SRC + 'js/ui-bootstrap-tpls-0.11.0.min.js'
 				],
 				dest: DIST + 'js/vendor.js'
 			}
