@@ -19,9 +19,9 @@ var app = angular.module('sandbox', [
 			.state('main.list', {
 				url: "/list",
 				templateUrl: "views/main.list.html",
-				controller: function($scope) {
+				controller: ['$scope', function($scope) {
 					$scope.items = ["A", "List", "Of", "Items"];
-				}
+				}]
 			})
 
 			// About
@@ -49,8 +49,8 @@ var app = angular.module('sandbox', [
 			.state('about.list', {
 				url: "/list",
 				templateUrl: "views/about.list.html",
-				controller: function($scope) {
+				controller: ['$scope', function($scope) {
 					$scope.things = ["A", "Set", "Of", "Things"];
-				}
+				}]
 			});
 }]);
