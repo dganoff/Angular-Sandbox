@@ -48,3 +48,17 @@
 		opacity: 0;
 	}
 }
+
+@include keyframes(scaleUpIn) {
+	from {
+		opacity: 0;
+		@include transform(scale(.8));
+	}
+}
+
+@include keyframes(scaleUpOut) {
+	to {
+		opacity: 0;
+		@include transform(scale(1.2));
+	}
+}

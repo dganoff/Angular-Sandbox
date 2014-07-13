@@ -14,10 +14,10 @@
 }
 
 .page.ng-enter {
-	@include animation(slideInLeft 0.75s ease-out);
+	@include animation(scaleUpIn 0.4s ease-out);
 }
 .page.ng-leave {
-	@include animation(slideOutLeft 0.75s ease);
+	@include animation(scaleUpOut 0.4s ease);
 }
 
 .peopleList .ng-enter {
