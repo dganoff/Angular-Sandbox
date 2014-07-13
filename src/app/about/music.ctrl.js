@@ -1,4 +1,4 @@
-app.controller('musicCtrl', ['$scope', function($scope) {
+angular.module('sandbox').controller('musicCtrl', ['$scope', function($scope) {
 	$scope.artists = [
 		"London Elektricity",
 		"Technical Itch",

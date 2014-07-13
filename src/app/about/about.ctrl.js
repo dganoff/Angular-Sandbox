@@ -1,4 +1,4 @@
-app.controller('aboutCtrl', ['$scope', function($scope) {
+angular.module('sandbox').controller('aboutCtrl', ['$scope', function($scope) {
 	$scope.pageClass = "aboutPage";
 	$scope.message = "Hello this is the about controller speaking.";
 

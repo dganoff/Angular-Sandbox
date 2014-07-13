@@ -1,4 +1,4 @@
-app.controller('skillsCtrl', ['$scope', function($scope) {
+angular.module('sandbox').controller('skillsCtrl', ['$scope', function($scope) {
 	$scope.skills = [
 		"HTML 5",
 		"SASS",

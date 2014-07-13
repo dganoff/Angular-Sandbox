@@ -1,4 +1,4 @@
-var app = angular.module('sandbox', [
+angular.module('sandbox', [
 	'ui.router',
 	'ui.bootstrap',
 	'ngResource',
