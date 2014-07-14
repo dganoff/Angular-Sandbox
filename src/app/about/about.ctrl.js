@@ -1,5 +1,8 @@
 angular.module('sandbox').controller('aboutCtrl', ['$scope', function($scope) {
-	$scope.pageClass = "aboutPage";
+	$scope.pageClass = "page-about";
+	
+	$scope.pageTitle = "About";
+
 	$scope.message = "Hello this is the about controller speaking.";
 
 	$scope.people = [

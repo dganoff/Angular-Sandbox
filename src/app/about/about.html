@@ -1,3 +1,9 @@
+<header class="header" role="banner">
+	<button class="btn btn-primary back-btn" ui-sref="{{backState}}">Back</button>
+
+	<p class="pageTitle">{{pageTitle}}</p>
+</header>
+
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12 page-content">
@@ -17,11 +23,11 @@
 			<p>These tabs are multi-views using ui-router's <code>ui-view="&lt;name&gt;"</code> method. They each have their own controller and view html.</p>
 
 			<tabset type="pills" class="sub-sections">
-				<tab heading="Music">
-					<div ui-view="music"></div>
-				</tab>
 				<tab heading="Skills">
 					<div ui-view="skills"></div>
+				</tab>
+				<tab heading="Music">
+					<div ui-view="music"></div>
 				</tab>
 			</tabset>
 

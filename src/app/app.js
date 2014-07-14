@@ -52,5 +52,10 @@ angular.module('sandbox', [
 				controller: ['$scope', function($scope) {
 					$scope.things = ["A", "Set", "Of", "Things"];
 				}]
+			})
+			.state('skillDetails', {
+				url: "/skills/details",
+				templateUrl: "views/skillDetails.html",
+				controller: "skillDetailsCtrl"
 			});
 }]);

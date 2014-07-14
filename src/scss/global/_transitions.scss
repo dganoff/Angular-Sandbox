@@ -1,6 +1,5 @@
 .page {
 	position: absolute;
-	// bottom: 50px;
 	top: 0;
 	width: 100%;
 }
@@ -13,11 +12,22 @@
 	z-index: 8889;
 }
 
-.page.ng-enter {
-	@include animation(scaleUpIn 0.4s ease-out);
+[class*="page-"] {
+	&.ng-enter {
+		@include animation(scaleUpIn 0.4s ease-out);
+	}
+	&.ng-leave {
+		@include animation(scaleUpOut 0.4s ease);
+	}
 }
-.page.ng-leave {
-	@include animation(scaleUpOut 0.4s ease);
+
+[class*="detailPage-"] {
+	&.ng-enter {
+		@include animation(slideInLeft 0.4s ease-out);
+	}
+	&.ng-leave {
+		@include animation(slideOutLeft 0.4s ease);
+	}
 }
 
 .peopleList .ng-enter {

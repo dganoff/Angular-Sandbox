@@ -1,0 +1,14 @@
+.selectable-list {
+	margin: 0;
+	padding: 0;
+
+	li {
+		display: block;
+		list-style: none;
+		padding: 0.5em;
+
+		&:nth-child(even) {
+			background: #eee;
+		}
+	}
+}
